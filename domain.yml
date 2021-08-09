@@ -1,0 +1,80 @@
+version: "2.0"
+
+intents:
+    - greet
+    - goodbye
+    - affirm
+    - deny
+    - mood_great
+    - mood_unhappy
+    - bot_challenge
+    - site_not_working
+    - student_portal
+    - help_desk
+    - recent_events
+    - classes_courses
+    - official_site
+    - doc_sub
+    - rechecking_paper
+    - time_table
+    - manage_id
+
+responses:
+    utter_greet:
+        - text: 'Hey! How are you?'
+
+    utter_cheer_up:
+        - text: 'Here is something to cheer you up:'
+          image: 'https://i.imgur.com/nGF1K8f.jpg'
+
+    utter_did_that_help:
+        - text: 'Did that help you?'
+
+    utter_happy:
+        - text: 'Great, carry on!'
+
+    utter_goodbye:
+        - text: 'Bye'
+
+    utter_iamabot:
+        - text: 'I am a bot, powered by Rasa.'
+
+    utter_getting_maintainance:
+        - text: 'Getting to our maintainance staff.'
+        - text: 'We will be back shortly soon.'
+
+    utter_compatibility_stu:
+        - text: 'Site works beat with mozilla firefox.
+        Clear all entry and write it manually.
+        Use college email id instead of sap id only.'
+    
+    utter_compatibility_help:
+        - text: 'Site works beat with mozilla firefox.
+        Clear all entry and write it manually.
+        Use sap id instead of college email id.'
+
+    utter_announcements:
+        - text: 'Click on announcements on top left corner.'
+
+    utter_classes_courses:
+        - text: 'Click on Access LMS then on blackboard learn.Enter credentials on login.you can see classes and courses now.'
+
+    utter_official_site:
+        - text: 'If you click on the logo of UPES it will be redirected to official site.'
+    
+    utter_doc_sub:
+        - text: 'You can either raise a ticket at helpdesk or You can go to SRE in first block.'
+    
+    utter_rechecking_paper:
+        - text: 'if facing any issues resubmission of exams. Login to help desk and raise a ticket in category of exam resubmission form'
+    
+    utter_time_table:
+        - text: 'Login to your student portal. Find timetable tab in the bottom right.(if available)'
+        - text: 'If your timetable is available you can get a option of examination notification.'
+    
+    utter_manage_id:
+        - text: 'If you want to change your google mail password. Click on reset student mail password and follow the manual you get from there.'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

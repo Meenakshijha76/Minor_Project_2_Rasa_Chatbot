@@ -1,0 +1,177 @@
+version: '2.0'
+
+nlu:
+    - intent: greet
+      examples: |
+          - hey
+          - hello
+          - hi
+          - hello there
+          - good morning
+          - good evening
+          - moin
+          - hey there
+          - let's go
+          - hey dude
+          - goodmorning
+          - goodevening
+          - good afternoon
+
+    - intent: goodbye
+      examples: |
+          - good afternoon
+          - cu
+          - good by
+          - cee you later
+          - good night
+          - bye
+          - goodbye
+          - have a nice day
+          - see you around
+          - bye bye
+          - see you later
+
+    - intent: affirm
+      examples: |
+          - yes
+          - y
+          - indeed
+          - of course
+          - that sounds good
+          - correct
+
+    - intent: deny
+      examples: |
+          - no
+          - n
+          - never
+          - I don't think so
+          - don't like that
+          - no way
+          - not really
+
+    - intent: mood_great
+      examples: |
+          - perfect
+          - great
+          - amazing
+          - feeling like a king
+          - wonderful
+          - I am feeling very good
+          - I am great
+          - I am amazing
+          - I am going to save the world
+          - super stoked
+          - extremely good
+          - so so perfect
+          - so good
+          - so perfect
+
+    - intent: mood_unhappy
+      examples: |
+          - my day was horrible
+          - I am sad
+          - I don't feel very well
+          - I am disappointed
+          - super sad
+          - I'm so sad
+          - sad
+          - very sad
+          - unhappy
+          - not good
+          - not very good
+          - extremly sad
+          - so saad
+          - so sad
+
+    - intent: bot_challenge
+      examples: |
+          - are you a bot?
+          - are you a human?
+          - am I talking to a bot?
+          - am I talking to a human?
+
+    - intent: site_not_working
+      examples: |
+          - site not working properly
+          - site not functioning properly
+          - upes webpage offline
+          - webpage is inoperative
+          - website is not operating
+          - out of service.
+          - error 404.
+          - site not found
+
+    - intent: student_portal
+      examples: |
+          - I am unable to login to student portal
+          - I can't connect to student portal
+          - portal not opening
+          - poral not running
+
+    - intent: help_desk
+      examples: |
+          - I am unable to login in help desk
+          - I can't connect to help desk
+          - Why is help desk not working
+          - contact help desk
+
+    - intent: recent_events
+      examples: |
+          - What are recent events going in campus?
+          - latest events
+          - Current Affairs
+          - new things at campus
+          - campus news
+          - college news
+          - college announcements
+          - what is going on in college
+          - recent events
+
+    - intent: classes_courses
+      examples: |
+          - What are courses in campus?
+          - Latest courses.
+          - My classes.
+          - Where do I find classes?
+          - What subject class is next?
+          - where can i see my marks.
+          - where can i see my result 
+
+    - intent: official_site
+      examples: |
+          - official site of UPES.
+          - UPES Website
+          - UPES Logo Redirect
+          - where is UPES site
+
+    - intent: doc_sub
+      examples: |
+          - I want to submit id, document, papers.
+          - How do I submit documents?
+          - My documents are incomplete.
+          - I want to resubmit a document.
+
+    - intent: rechecking_paper
+      examples: |
+          - How can I apply for rechecking of my papers?
+          - How to get paper rechecked?
+          - Review my exam papers.
+          - Re-marking
+          - Raise ticket for resubmission
+          - Resubmission form
+
+    - intent: time_table
+      examples: |
+          - Where can I get my exam timetable?
+          - the timetable
+          - see timetable
+          - days of exams          
+
+    - intent: manage_id
+      examples: |
+          - I want to change my google mail id password
+          - how do I change my password.
+          - reset google id
+          - reset password.
+          - update/modify mail details

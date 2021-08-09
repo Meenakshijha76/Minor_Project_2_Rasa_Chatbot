@@ -1,0 +1,62 @@
+version: '2.0'
+
+rules:
+    - rule: Say goodbye anytime the user says goodbye
+      steps:
+          - intent: goodbye
+          - action: utter_goodbye
+
+    - rule: Say 'I am a bot' anytime the user challenges
+      steps:
+          - intent: bot_challenge
+          - action: utter_iamabot
+
+    - rule: Someone complains about website
+      steps:
+          - intent: site_not_working
+          - action: utter_getting_maintainance
+
+    - rule: Unable to connect to student portal
+      steps:
+          - intent: student_portal
+          - action: utter_compatibility_stu
+
+    - rule: Unable to connect to help desk
+      steps:
+          - intent: help_desk
+          - action: utter_compatibility_help
+
+    - rule: Telling about recents events.
+      steps:
+          - intent: recents_events
+          - action: utter_announcements
+
+    - rule: Telling about classes and courses.
+      steps:
+          - intent: classes_courses
+          - action: utter_classes_courses
+
+    - rule: Telling about official site
+      steps:
+          - intent: official_site
+          - action: utter_official_site
+
+    - rule: Telling about document submissions
+      steps:
+          - intent: doc_sub
+          - action: utter_doc_sub
+
+    - rule: Telling about rechecking paper
+      steps:
+          - intent: rechecking_paper
+          - action: utter_rechecking_paper
+
+    - rule: Telling about timetable
+      steps:
+          - intent: time_table
+          - action: utter_time_table
+
+    - rule: Telling about google mail id
+      steps:
+          - intent: manage_id
+          - action: utter_manage_id
